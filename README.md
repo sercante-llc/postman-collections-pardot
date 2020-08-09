@@ -10,9 +10,10 @@ If you need help with the setup, someone to bounce questions off of, or just a s
 To use the latest published version, click one of the following buttons to import the Pardot API as a collection. Each button sets up a Collection as well as an Environment.
 
 #### Pardot with Salesforce SSO
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/253c060bb4f6ac7263db#?env%5BPardot%20API%20-%20Salesforce%20SSO%5D=W3sia2V5IjoidXNlcm5hbWUiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGFzc3dvcmQiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5Ijoic2VjdXJpdHlfdG9rZW4iLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29uc3VtZXJfaWQiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29uc3VtZXJfc2VjcmV0IiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImJ1c2luZXNzX3VuaXRfaWQiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGFyZG90X2RvbWFpbiIsInZhbHVlIjoicGkucGFyZG90LmNvbSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiYXBpX3ZlcnNpb24iLCJ2YWx1ZSI6IjMiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6Im91dHB1dF9mb3JtYXQiLCJ2YWx1ZSI6Impzb24iLCJlbmFibGVkIjp0cnVlfV0=)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://go.sercante.com/postman-collection/pardot-salesforce-sso)
+
 #### Pardot Only User
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/c677687dc696d9357d01#?env%5BPardot%20API%20-%20Pardot%20Only%20User%5D=W3sia2V5IjoidXNlcm5hbWUiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGFzc3dvcmQiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoidXNlcl9rZXkiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGFyZG90X2RvbWFpbiIsInZhbHVlIjoicGkucGFyZG90LmNvbSIsImVuYWJsZWQiOnRydWV9LHsia2V5Ijoib3V0cHV0X2Zvcm1hdCIsInZhbHVlIjoianNvbiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiYXBpX3ZlcnNpb24iLCJ2YWx1ZSI6IjMiLCJlbmFibGVkIjp0cnVlfV0=)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://go.sercante.com/postman-collection/pardot-user-only)
 
 You can also download the collection and environment files from this repo, then import directly into Postman.
 
