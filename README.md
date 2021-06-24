@@ -30,6 +30,8 @@ Once imported, manage the Postman environment variables to get going.
 
 #### Environment Variables
 
+**Note:** - This Collection uses the Salesforce Username/Password OAuth flow, which is good for browsing around and **not** great for Production.
+
 |Variable  |Default value               |Example|
 |----------|----------------------------|-------|
 |`username` |                            | `apiuser@company.com`      |
