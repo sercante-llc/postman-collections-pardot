@@ -8373,8 +8373,8 @@
 										},
 										{
 											"key": "scheduled_time",
-											"value": "2020-01-01 00:00:00",
-											"description": "datetime",
+											"value": "2020-01-01T00:00:00Z",
+											"description": "This datetime format is different from the others. Beware!",
 											"type": "text",
 											"disabled": true
 										}
