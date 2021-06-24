@@ -14,7 +14,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "78485909-cd00-44e6-9e24-cfcbea23a7c0",
 								"exec": [
 									"var jsonResponse = pm.response.json();",
 									"pm.environment.set(\"access_token\", jsonResponse.access_token);"
@@ -61,8 +60,7 @@
 									"value": "{{password}}{{security_token}}",
 									"type": "text"
 								}
-							],
-							"options": {}
+							]
 						},
 						"url": {
 							"raw": "https://login.salesforce.com/services/oauth2/token",
@@ -199,8 +197,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Task \"Packages\"",
@@ -214,7 +211,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "68be192e-1586-4a06-9f95-e98997a2f3e9",
 										"exec": [
 											"var jsonResponse = pm.response.json();",
 											"pm.environment.set(\"access_token\", jsonResponse.access_token);"
@@ -261,8 +257,7 @@
 											"value": "{{password}}{{security_token}}",
 											"type": "text"
 										}
-									],
-									"options": {}
+									]
 								},
 								"url": {
 									"raw": "https://login.salesforce.com/services/oauth2/token",
@@ -287,7 +282,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "901792a8-dd30-4f8a-b1d4-65b2490b2a8a",
 										"exec": [
 											""
 										],
@@ -317,8 +311,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"object\":\"VisitorActivity\",\n\t\"procedure\": {\n\t\t\"name\": \"filter_by_created_at\",\n\t\t\"arguments\": {\n\t\t\t\"created_after\": \"2020-01-01 00:00:00\",\n\t\t\t\"created_before\": \"2020-12-30 23:59:59\",\n\t\t\t\"type\":[1,6,11]\n\t\t}\n\t}\n}",
-									"options": {}
+									"raw": "{\n\t\"object\":\"VisitorActivity\",\n\t\"procedure\": {\n\t\t\"name\": \"filter_by_created_at\",\n\t\t\"arguments\": {\n\t\t\t\"created_after\": \"2020-01-01 00:00:00\",\n\t\t\t\"created_before\": \"2020-12-30 23:59:59\",\n\t\t\t\"type\":[1,6,11]\n\t\t}\n\t}\n}"
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/export/version/{{api_version}}/do/create?format={{output_format}}",
@@ -350,7 +343,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e7e3050f-3a78-4022-a191-54990ba7ada1",
 										"exec": [
 											""
 										],
@@ -380,8 +372,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"object\":\"Prospect\",\n\t\"fields\":[\"id\",\"email\"],\n\t\"procedure\": {\n\t\t\"name\": \"filter_by_updated_at\",\n\t\t\"arguments\": {\n\t\t\t\"deleted\":\"all\",\n\t\t\t\"updated_after\": \"2020-01-01 00:00:00\",\n\t\t\t\"updated_before\": \"2020-12-30 23:59:59\"\n\t\t}\n\t}\n}",
-									"options": {}
+									"raw": "{\n\t\"object\":\"Prospect\",\n\t\"fields\":[\"id\",\"email\"],\n\t\"procedure\": {\n\t\t\"name\": \"filter_by_updated_at\",\n\t\t\"arguments\": {\n\t\t\t\"deleted\":\"all\",\n\t\t\t\"updated_after\": \"2020-01-01 00:00:00\",\n\t\t\t\"updated_before\": \"2020-12-30 23:59:59\"\n\t\t}\n\t}\n}"
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/export/version/{{api_version}}/do/create?format={{output_format}}",
@@ -413,7 +404,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e1aefbf4-c8e4-4697-b06c-0088a396512e",
 										"exec": [
 											""
 										],
@@ -443,8 +433,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"object\":\"ListMembership\",\n\t\"procedure\": {\n\t\t\"name\": \"filter_by_created_at\",\n\t\t\"arguments\": {\n\t\t\t\"created_after\": \"2020-01-01 00:00:00\",\n\t\t\t\"created_before\": \"2020-12-30 23:59:59\"\n\t\t}\n\t}\n}",
-									"options": {}
+									"raw": "{\n\t\"object\":\"ListMembership\",\n\t\"procedure\": {\n\t\t\"name\": \"filter_by_created_at\",\n\t\t\"arguments\": {\n\t\t\t\"created_after\": \"2020-01-01 00:00:00\",\n\t\t\t\"created_before\": \"2020-12-30 23:59:59\"\n\t\t}\n\t}\n}"
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/export/version/{{api_version}}/do/create?format={{output_format}}",
@@ -476,7 +465,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "ca5cf856-bbb7-4e37-a9ac-c0a6525d421b",
 										"exec": [
 											""
 										],
@@ -508,8 +496,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "",
-									"options": {}
+									"raw": ""
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/export/version/{{api_version}}/do/read/id/:export_id?format={{output_format}}",
@@ -535,7 +522,6 @@
 									],
 									"variable": [
 										{
-											"id": "572944e1-85bd-431b-951d-169c2ea62f1c",
 											"key": "export_id",
 											"value": "58",
 											"type": "string"
@@ -581,13 +567,11 @@
 									],
 									"variable": [
 										{
-											"id": "4515e8f1-3317-4208-b179-e7e7905c2d62",
 											"key": "export_id",
 											"value": "",
 											"type": "string"
 										},
 										{
-											"id": "f571d1f6-80bb-4c89-b5e7-35ac39f1fc41",
 											"key": "file_id",
 											"value": "",
 											"type": "string"
@@ -603,7 +587,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c6e0c391-995c-4152-aa02-e0285bfd67e7",
 										"exec": [
 											""
 										],
@@ -613,7 +596,6 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "44230db9-ed02-4cfa-9302-2ef7f01db5ab",
 										"exec": [
 											""
 										],
@@ -645,8 +627,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "",
-									"options": {}
+									"raw": ""
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/export/version/{{api_version}}/do/query?created_after=2020-06-01 12:00:00",
@@ -683,13 +664,10 @@
 							"response": []
 						}
 					],
-					"description": "The steps 1-5 to perform an API export. There will need to be manual editing of IDs in the URL strings to access the records",
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					"description": "The steps 1-5 to perform an API export. There will need to be manual editing of IDs in the URL strings to access the records"
 				}
 			],
-			"description": "Groups of 'tasks' that we may wish to perform with the steps numbered in order.\n\nThis is a more task-oriented approach to using the API in an ad-hoc fashion.",
-			"protocolProfileBehavior": {}
+			"description": "Groups of 'tasks' that we may wish to perform with the steps numbered in order.\n\nThis is a more task-oriented approach to using the API in an ad-hoc fashion."
 		},
 		{
 			"name": "All Objects",
@@ -709,7 +687,6 @@
 												{
 													"listen": "test",
 													"script": {
-														"id": "420a3f46-35ac-4fca-a6fd-25b4e38494a7",
 														"exec": [
 															""
 														],
@@ -745,12 +722,7 @@
 															"value": "{\n    \"prospects\": {\n        \"marge@hotmail.com\": {\n            \"first_name\": \"Marge\",\n            \"last_name\": \"Simpson\"\n        },\n        \"jdoe@company.com\": {\n            \"first_name\": \"Jane\",\n            \"last_name\": \"Doe\"\n        },\n        \"homer@springfieldnuclear.com\": {\n            \"first_name\": \"Homer\",\n            \"last_name\": \"Simpson\"\n        }\n    }\n}",
 															"type": "text"
 														}
-													],
-													"options": {
-														"raw": {
-															"language": "xml"
-														}
-													}
+													]
 												},
 												"url": {
 													"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/batchCreate?format={{output_format}}",
@@ -783,7 +755,6 @@
 												{
 													"listen": "test",
 													"script": {
-														"id": "639b8258-1e74-4dea-9edd-d8840206a0c6",
 														"exec": [
 															""
 														],
@@ -819,12 +790,7 @@
 															"value": "{\n    \"prospects\": {\n        \"1\": {\n            \"first_name\": \"Marge\",\n            \"last_name\": \"Simpson\"\n        },\n        \"jdoe@company.com\": {\n            \"first_name\": \"Jane\",\n            \"last_name\": \"Doe\"\n        },\n        \"2\": {\n            \"first_name\": \"Homer\",\n            \"last_name\": \"Simpson\"\n        }\n    }\n}",
 															"type": "text"
 														}
-													],
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
+													]
 												},
 												"url": {
 													"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/batchUpdate?format={{output_format}}",
@@ -857,7 +823,6 @@
 												{
 													"listen": "test",
 													"script": {
-														"id": "904815f1-64b7-4855-a556-a310982a69e6",
 														"exec": [
 															""
 														],
@@ -893,12 +858,7 @@
 															"value": "{\n    \"prospects\": {\n        \"1\": {\n            \"first_name\": \"Marge\",\n            \"last_name\": \"Simpson\"\n        },\n        \"jdoe@company.com\": {\n            \"first_name\": \"Jane\",\n            \"last_name\": \"Doe\"\n        },\n        \"2\": {\n            \"first_name\": \"Homer\",\n            \"last_name\": \"Simpson\"\n        }\n    }\n}",
 															"type": "text"
 														}
-													],
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
+													]
 												},
 												"url": {
 													"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/batchUpsert?format={{output_format}}",
@@ -925,9 +885,7 @@
 											},
 											"response": []
 										}
-									],
-									"protocolProfileBehavior": {},
-									"_postman_isSubFolder": true
+									]
 								},
 								{
 									"name": "Query",
@@ -1211,7 +1169,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -1286,7 +1245,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -1361,7 +1321,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -1436,7 +1397,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -1713,12 +1675,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/create?format={{output_format}}",
@@ -1750,7 +1707,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "4f3acb7e-40fe-4546-9249-91d4508ccfa8",
 												"exec": [
 													""
 												],
@@ -1797,7 +1753,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -1811,7 +1768,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "a9b6f58c-9fe8-49ae-81cc-65d781324e35",
 												"exec": [
 													""
 												],
@@ -1858,7 +1814,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -2135,12 +2092,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/update/id/:id?format={{output_format}}",
@@ -2167,7 +2119,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -2429,12 +2382,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/update/email/:email_address?format={{output_format}}",
@@ -2461,7 +2409,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -2724,12 +2673,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/upsert/email/:emailAddress?format={{output_format}}",
@@ -2756,7 +2700,8 @@
 											"variable": [
 												{
 													"key": "emailAddress",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -3019,12 +2964,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/3/do/upsert/email/:email_address?format={{output_format}}",
@@ -3051,7 +2991,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -3064,7 +3005,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "c47993fa-2194-44ba-b7a8-15343b6864a2",
 												"exec": [
 													""
 												],
@@ -3111,7 +3051,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -3125,7 +3066,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "74ea859e-93fc-4566-8d50-61b09b15b869",
 												"exec": [
 													""
 												],
@@ -3172,7 +3112,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -3180,9 +3121,7 @@
 									},
 									"response": []
 								}
-							],
-							"protocolProfileBehavior": {},
-							"_postman_isSubFolder": true
+							]
 						},
 						{
 							"name": "V4",
@@ -3196,7 +3135,6 @@
 												{
 													"listen": "test",
 													"script": {
-														"id": "c296455c-b463-46d8-9b8b-c2d45748c998",
 														"exec": [
 															""
 														],
@@ -3232,12 +3170,7 @@
 															"value": "{\n    \"prospects\": [\n        {\"email\":\"some@email.com\",\"first_name\":\"First name\",\"last_name\":\"Last name\"},\n        {\"email\":\"some@email.com\",\"first_name\":\"First name\",\"last_name\":\"Last name\"},\n        {\"email\":\"some@email.com\",\"first_name\":\"First name\",\"last_name\":\"Last name\"}\n    ]\n}",
 															"type": "text"
 														}
-													],
-													"options": {
-														"raw": {
-															"language": "xml"
-														}
-													}
+													]
 												},
 												"url": {
 													"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/batchCreate?format={{output_format}}",
@@ -3270,7 +3203,6 @@
 												{
 													"listen": "test",
 													"script": {
-														"id": "2ca5bdf1-7235-4c01-b895-982038934ed4",
 														"exec": [
 															""
 														],
@@ -3306,12 +3238,7 @@
 															"value": "{\n    \"prospects\": [\n        {\"fid\":\"1234\",\"first_name\":\"First name\",\"last_name\":\"Last name\"},\n        {\"id\":\"10\",\"first_name\":\"First name\",\"last_name\":\"Last name\"}\n    ]\n}",
 															"type": "text"
 														}
-													],
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
+													]
 												},
 												"url": {
 													"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/batchUpdate?format={{output_format}}",
@@ -3344,7 +3271,6 @@
 												{
 													"listen": "test",
 													"script": {
-														"id": "4286543f-8351-4aaa-b15b-b12a2adf76d9",
 														"exec": [
 															""
 														],
@@ -3380,12 +3306,7 @@
 															"value": "{\n    \"prospects\": [\n        {\"email\":\"some@email.com\",\"first_name\":\"First name\",\"last_name\":\"Last name\"},\n        {\"fid\":\"1234\",\"first_name\":\"First name\",\"last_name\":\"Last name\"},\n        {\"id\":\"10\",\"first_name\":\"First name\",\"last_name\":\"Last name\"}\n    ]\n}",
 															"type": "text"
 														}
-													],
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
+													]
 												},
 												"url": {
 													"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/batchUpsert?format={{output_format}}",
@@ -3412,9 +3333,7 @@
 											},
 											"response": []
 										}
-									],
-									"protocolProfileBehavior": {},
-									"_postman_isSubFolder": true
+									]
 								},
 								{
 									"name": "Query",
@@ -3698,7 +3617,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -3773,7 +3693,8 @@
 											"variable": [
 												{
 													"key": "fid",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -3848,7 +3769,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -3923,7 +3845,8 @@
 											"variable": [
 												{
 													"key": "fid",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -4200,12 +4123,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/create?format={{output_format}}",
@@ -4237,7 +4155,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "df59412a-0a31-4912-aa95-c0e70f012e45",
 												"exec": [
 													""
 												],
@@ -4284,7 +4201,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -4298,7 +4216,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "8367cd20-071c-4745-a3fa-666e036e5cd3",
 												"exec": [
 													""
 												],
@@ -4345,7 +4262,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -4359,7 +4277,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "b541402d-11ac-47f2-914c-583d79d143dc",
 												"exec": [
 													""
 												],
@@ -4406,7 +4323,8 @@
 											"variable": [
 												{
 													"key": "fid",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -4683,12 +4601,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/update/id/:id?format={{output_format}}",
@@ -4715,7 +4628,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -4977,12 +4891,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/update/email/:email_address?format={{output_format}}",
@@ -5009,7 +4918,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -5285,12 +5195,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/update/fid/:fid?format={{output_format}}",
@@ -5317,7 +5222,8 @@
 											"variable": [
 												{
 													"key": "fid",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -5580,12 +5486,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/upsert/id/:id?format={{output_format}}",
@@ -5612,7 +5513,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -5875,12 +5777,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/upsert/email/:email_address?format={{output_format}}",
@@ -5907,7 +5804,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -6170,12 +6068,7 @@
 													"type": "text",
 													"disabled": true
 												}
-											],
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+											]
 										},
 										"url": {
 											"raw": "https://{{pardot_domain}}/api/prospect/version/4/do/upsert/fid/:fid?format={{output_format}}",
@@ -6202,7 +6095,8 @@
 											"variable": [
 												{
 													"key": "fid",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										}
@@ -6215,7 +6109,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "29e1ca30-8d36-40f7-9c7d-e660bf6d3907",
 												"exec": [
 													""
 												],
@@ -6262,7 +6155,8 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -6276,7 +6170,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "a6f13670-914c-4f40-a49f-69ce0267c660",
 												"exec": [
 													""
 												],
@@ -6323,7 +6216,8 @@
 											"variable": [
 												{
 													"key": "fid",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -6337,7 +6231,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "15316c38-98c7-4437-af2d-5af5a6bc86af",
 												"exec": [
 													""
 												],
@@ -6384,7 +6277,8 @@
 											"variable": [
 												{
 													"key": "email_address",
-													"value": ""
+													"value": "",
+													"type": "string"
 												}
 											]
 										},
@@ -6392,14 +6286,10 @@
 									},
 									"response": []
 								}
-							],
-							"protocolProfileBehavior": {},
-							"_postman_isSubFolder": true
+							]
 						}
 					],
-					"description": "http://developer.pardot.com/kb/api-version-3/prospects/",
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					"description": "http://developer.pardot.com/kb/api-version-3/prospects/"
 				},
 				{
 					"name": "Visitor Activity",
@@ -6637,16 +6527,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Account",
@@ -6691,15 +6580,13 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Campaign",
 					"item": [
 						{
-							"name": "Query",
+							"name": "Query (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -6796,7 +6683,89 @@
 							"response": []
 						},
 						{
-							"name": "Read",
+							"name": "Query (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/campaigns?fields=id,name,isDeleted,folderId,folder.name,folder.path",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,name,isDeleted,folderId,folder.name,folder.path",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "Defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -6836,7 +6805,55 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/campaigns/:pardotCampaignId?fields=id,name,isDeleted,folderId,folder.name,folder.path",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"campaigns",
+										":pardotCampaignId"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,name,isDeleted,folderId,folder.name,folder.path",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "pardotCampaignId",
+											"value": "",
+											"description": "An integer value, is NOT the same as the Salesforce Campaign Id"
 										}
 									]
 								}
@@ -6909,7 +6926,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -6953,12 +6971,7 @@
 											"description": "int",
 											"type": "text"
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/campaign/version/{{api_version}}/do/create?format={{output_format}}",
@@ -6984,9 +6997,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Custom Field",
@@ -7122,7 +7133,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -7216,7 +7228,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -7352,22 +7365,21 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Custom Redirect",
 					"item": [
 						{
-							"name": "Query",
+							"name": "Query (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -7468,7 +7480,89 @@
 							"response": []
 						},
 						{
-							"name": "Read",
+							"name": "Query (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/custom-redirects?fields=id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"custom-redirects"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to False",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -7508,6 +7602,202 @@
 									"variable": [
 										{
 											"key": "id",
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/custom-redirects/:id?fields=id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"custom-redirects",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Custom Redirect API\",\n    \"destinationUrl\": \"https://example.com/destination.html\",\n    \"campaignId\": 12345,\n    \"trackerDomainId\": 54321,\n    \"vanityUrlPath\": \"/an-example\",\n    \"gaTerm\": \"Search Term\"\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/custom-redirects?fields=id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"custom-redirects"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Custom Redirect API 1\",\n    \"destinationUrl\": \"https://example.com/destinationFixed.html\"\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/custom-redirects/:id?fields=id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"custom-redirects",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,vanityUrl,trackedUrl,isDeleted,createdBy.username,trackerDomain.domain"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Custom Redirect API 1\",\n    \"destinationUrl\": \"https://example.com/destinationFixed.html\"\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/custom-redirects/:id",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"custom-redirects",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
 											"value": ""
 										}
 									]
@@ -7520,7 +7810,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4938a7a3-527d-45d5-a51d-bdb19a1b9a51",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -7530,16 +7819,13 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "baf01390-7df3-4508-aa9f-54bf5239f7ab",
 								"type": "text/javascript",
 								"exec": [
 									""
 								]
 							}
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Dynamic Content",
@@ -7687,16 +7973,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Email",
@@ -7743,7 +8028,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -7792,7 +8078,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -8118,9 +8405,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Email Clicks",
@@ -8220,9 +8505,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Email Template",
@@ -8275,7 +8558,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -8329,15 +8613,525 @@
 							},
 							"response": []
 						}
+					]
+				},
+				{
+					"name": "Files",
+					"item": [
+						{
+							"name": "Query",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/files?fields=id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"files"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/files/:id?fields=id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"files",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "input",
+											"value": "{\"name\":\"Test file\",\"campaignId\":12345}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/files?fields=id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"files"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update (metadata only)",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Test file 1\",\n    \"campaignId\":12345,\n    \"vanityUrlPath\":\"/superCoolFileFixed.txt\"\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/files/:id?fields=id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"files",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update (file)",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "input",
+											"value": "{\"name\":\"Test file\",\"campaignId\":12345,\"vanityUrlPath\":\"/superCoolFile.txt\"}",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/files/:id?fields=id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"files",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,salesforceId,url,size,vanityUrl,trackerDomain.domain,isTracked"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Custom Redirect API 1\",\n    \"destinationUrl\": \"https://example.com/destinationFixed.html\"\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/files/:id",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"files",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
 					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Folders",
+					"item": [
+						{
+							"name": "Query",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/folders?fields=id,name,parentFolderId,parentFolder.name,path,usePermissions",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"folders"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,name,parentFolderId,parentFolder.name,path,usePermissions",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/folders/:pardotCampaignId?fields=id,name,parentFolderId,parentFolder.name,path,usePermissions",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"folders",
+										":pardotCampaignId"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,name,parentFolderId,parentFolder.name,path,usePermissions",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "pardotCampaignId",
+											"value": "",
+											"description": "An integer value, is NOT the same as the Salesforce Campaign Id"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				},
 				{
 					"name": "Form",
 					"item": [
 						{
-							"name": "Query",
+							"name": "Query (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -8438,7 +9232,87 @@
 							"response": []
 						},
 						{
-							"name": "Read",
+							"name": "Query (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/forms?fields=id,name,campaignId,salesforceId,embedCode,redirectLocation,layoutTemplateId,layoutTemplate.name",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"forms"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,name,campaignId,salesforceId,embedCode,redirectLocation,layoutTemplateId,layoutTemplate.name"
+										},
+										{
+											"key": "id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -8479,6 +9353,52 @@
 									"variable": [
 										{
 											"key": "id",
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/forms/:id?fields=id,name,campaignId,salesforceId,embedCode,redirectLocation,layoutTemplateId,layoutTemplate.name",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"forms",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,name,campaignId,salesforceId,embedCode,redirectLocation,layoutTemplateId,layoutTemplate.name"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
 											"value": ""
 										}
 									]
@@ -8486,9 +9406,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Import",
@@ -8499,7 +9417,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "cad6ce15-35c5-4375-b091-5aec6082d0d3",
 										"exec": [
 											""
 										],
@@ -8560,7 +9477,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "02c971ea-8d64-48df-acca-fca1a4a65db4",
 										"exec": [
 											""
 										],
@@ -8621,7 +9537,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d68c2c7c-bf5b-401e-92c9-293891f9e87c",
 										"exec": [
 											""
 										],
@@ -8694,7 +9609,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "8ead79c6-1adb-46ce-b8aa-f0792b7b075a",
 										"exec": [
 											""
 										],
@@ -8757,7 +9671,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -8770,7 +9685,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "35e2b95d-d810-4172-8de9-50df7e42008e",
 										"exec": [
 											""
 										],
@@ -8826,7 +9740,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -8839,7 +9754,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "580bd298-f020-4e7d-8353-4304cd5c15a3",
 										"exec": [
 											""
 										],
@@ -8886,7 +9800,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -8899,7 +9814,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4c386dca-7afb-4b64-b735-50bf9e9dc15a",
 										"exec": [
 											""
 										],
@@ -8946,6 +9860,289 @@
 									"variable": [
 										{
 											"key": "id",
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Layout Template",
+					"item": [
+						{
+							"name": "Query",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/layout-templates?fields=id,isDeleted,folderId,folder.name,formContent,layoutContent",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"layout-templates"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,isDeleted,folderId,folder.name,formContent,layoutContent",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/layout-templates/:id?fields=id,isDeleted,folderId,folder.name,formContent,layoutContent",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"layout-templates",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,isDeleted,folderId,folder.name,formContent,layoutContent",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"my template\",\n    \"layoutContent\":\"<html></html>\",\n    \"isIncludeDefaultCss\":true,\n    \"folderId\": 12345\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/layout-templates?fields=id,isDeleted,folderId,folder.name,formContent,layoutContent",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"layout-templates"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,isDeleted,folderId,folder.name,formContent,layoutContent"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"my template updated\",\n    \"layoutContent\":\"<html>Hello World</html>\",\n    \"isIncludeDefaultCss\":true,\n    \"folderId\": 12345\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/layout-templates/:id?fields=id,isDeleted,folderId,folder.name,formContent,layoutContent",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"layout-templates",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,isDeleted,folderId,folder.name,formContent,layoutContent"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Custom Redirect API 1\",\n    \"destinationUrl\": \"https://example.com/destinationFixed.html\"\n}"
+								},
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/layout-templates/:id",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"layout-templates",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
 											"value": ""
 										}
 									]
@@ -8954,8 +10151,26 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
 				},
 				{
 					"name": "Lifecycle History",
@@ -9091,16 +10306,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Lifecycle Stage",
@@ -9182,9 +10396,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "List",
@@ -9338,7 +10550,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -9524,7 +10737,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -9572,16 +10786,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "List Membership",
@@ -9741,7 +10954,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -9794,11 +11008,13 @@
 									"variable": [
 										{
 											"key": "list_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										},
 										{
 											"key": "prospect_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -9936,7 +11152,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -10005,11 +11222,13 @@
 									"variable": [
 										{
 											"key": "list_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										},
 										{
 											"key": "prospect_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -10057,7 +11276,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -10107,20 +11327,20 @@
 									"variable": [
 										{
 											"key": "list_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										},
 										{
 											"key": "prospect_id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Opportunity",
@@ -10326,12 +11546,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/opportunity/version/{{api_version}}/do/create?format={{output_format}}",
@@ -10427,12 +11642,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/opportunity/version/{{api_version}}/do/create?format={{output_format}}",
@@ -10539,12 +11749,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/opportunity/version/{{api_version}}/do/update/id/:id?format={{output_format}}",
@@ -10571,7 +11776,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -10620,7 +11826,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -10668,7 +11875,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -10716,16 +11924,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Prospect Account",
@@ -10885,7 +12092,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -11098,12 +12306,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/prospectAccount/version/{{api_version}}/do/create?format={{output_format}}",
@@ -11335,12 +12538,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/prospectAccount/version/{{api_version}}/do/update/id/:id?format={{output_format}}",
@@ -11367,7 +12565,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -11405,12 +12604,7 @@
 											"description": "int",
 											"type": "text"
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/prospectAccount/version/{{api_version}}/do/assign/id/:id?format={{output_format}}",
@@ -11437,16 +12631,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Tag",
@@ -11600,16 +12793,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Tag Object",
@@ -11763,6 +12955,140 @@
 									"variable": [
 										{
 											"key": "id",
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tracker Domain",
+					"item": [
+						{
+							"name": "Query",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/tracker-domains?fields=id,domain,isPrimary,isDeleted,defaultCampaignId",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"tracker-domains"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,domain,isPrimary,isDeleted,defaultCampaignId",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "defaults to 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "defaults to false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/tracker-domains/:id?fields=id,domain,isPrimary,isDeleted,defaultCampaignId",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"tracker-domains",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,domain,isPrimary,isDeleted,defaultCampaignId",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
 											"value": ""
 										}
 									]
@@ -11770,15 +13096,13 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "User",
 					"item": [
 						{
-							"name": "Query",
+							"name": "Query (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -11867,7 +13191,89 @@
 							"response": []
 						},
 						{
-							"name": "Read - Id",
+							"name": "Query (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/users?fields=id,username,isDeleted",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "ID of the object",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idGreaterThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThan",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "idLessThanOrEqualTo",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "orderBy",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": "id,username,isDeleted",
+											"description": "Required"
+										},
+										{
+											"key": "limit",
+											"value": "1000",
+											"description": "default of 200",
+											"disabled": true
+										},
+										{
+											"key": "deleted",
+											"value": "all",
+											"description": "default of false",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read - Id (old)",
 							"request": {
 								"method": "GET",
 								"header": [
@@ -11908,7 +13314,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -11957,6 +13364,53 @@
 									"variable": [
 										{
 											"key": "email_address",
+											"value": "",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read (v5)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Pardot-Business-Unit-Id",
+										"type": "text",
+										"value": "{{business_unit_id}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{pardot_domain}}/api/v5/objects/users/:id?fields=id,username,isDeleted",
+									"protocol": "https",
+									"host": [
+										"{{pardot_domain}}"
+									],
+									"path": [
+										"api",
+										"v5",
+										"objects",
+										"users",
+										":id"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,username,isDeleted",
+											"description": "Required"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
 											"value": ""
 										}
 									]
@@ -11964,9 +13418,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Visitor",
@@ -12138,7 +13590,8 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
@@ -12183,12 +13636,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "https://{{pardot_domain}}/api/visitor/version/{{api_version}}/do/assign/id/:id?format={{output_format}}",
@@ -12215,16 +13663,15 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Visit",
@@ -12348,23 +13795,21 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "",
+											"type": "string"
 										}
 									]
 								}
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				}
 			],
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "e7dd58fa-9dc1-4cf7-a80f-efb19eac6ab2",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -12374,15 +13819,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "22dfa011-c449-4ddd-baac-dd9185e03f9c",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Login",
@@ -12390,10 +13833,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "923cf56e-4f5c-4d3e-a49a-36c38713edb9",
 						"exec": [
 							"var jsonResponse = pm.response.json();",
-							"pm.environment.set(\"access_token\", jsonResponse.access_token);"
+							"pm.environment.set(\"access_token\", jsonResponse.access_token);",
+							"pm.environment.set(\"instance_url\", jsonResponse.instance_url);"
 						],
 						"type": "text/javascript"
 					}
@@ -12437,8 +13880,7 @@
 							"value": "{{password}}{{security_token}}",
 							"type": "text"
 						}
-					],
-					"options": {}
+					]
 				},
 				"url": {
 					"raw": "https://login.salesforce.com/services/oauth2/token",
@@ -12456,7 +13898,40 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Pardot Business Units (read desc)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{instance_url}}/services/data/v51.0/query/?q=SELECT Id, PardotTenantName FROM PardotTenant WHERE IsDeleted = false",
+					"host": [
+						"{{instance_url}}"
+					],
+					"path": [
+						"services",
+						"data",
+						"v51.0",
+						"query",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "SELECT Id, PardotTenantName FROM PardotTenant WHERE IsDeleted = false"
+						}
+					]
+				},
+				"description": "A regular identity user will not suffice for this.\n\nYou need to make sure that the Connected App has the API scope, AND the user has the ability to read PardotTenant objects. Ideal for an administrator who might be setting up your app."
+			},
+			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
