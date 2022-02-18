@@ -6223,6 +6223,92 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Upsert by Email",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Pardot-Business-Unit-Id",
+												"type": "text",
+												"value": "{{business_unit_id}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"matchEmail\": \"adam@sercante.com\",\n    \"prospect\": {\n        \"email\": \"adam@sercante.com\",\n        \"firstName\": \"Adam\"\n    },\n    \"fields\": [\"id\", \"email\", \"firstName\"],\n    \"secondaryDeletedSearch\": true\n}"
+										},
+										"url": {
+											"raw": "https://{{pardot_domain}}/api/v5/objects/prospects/do/upsertLatestByEmail",
+											"protocol": "https",
+											"host": [
+												"{{pardot_domain}}"
+											],
+											"path": [
+												"api",
+												"v5",
+												"objects",
+												"prospects",
+												"do",
+												"upsertLatestByEmail"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Undelete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Pardot-Business-Unit-Id",
+												"type": "text",
+												"value": "{{business_unit_id}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"adam@sercante.com\"\n}"
+										},
+										"url": {
+											"raw": "https://{{pardot_domain}}/api/v5/objects/prospects/do/undelete",
+											"protocol": "https",
+											"host": [
+												"{{pardot_domain}}"
+											],
+											"path": [
+												"api",
+												"v5",
+												"objects",
+												"prospects",
+												"do",
+												"undelete"
+											]
+										}
+									},
+									"response": []
 								}
 							]
 						}
