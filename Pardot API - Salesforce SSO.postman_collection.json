@@ -6955,7 +6955,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://{{pardot_domain}}/api/v5/objects/campaigns?fields=id,name,isDeleted,folderId,folder.name,folder.path",
+									"raw": "https://{{pardot_domain}}/api/v5/objects/campaigns?fields=id,salesforceId,name,isDeleted,folderId,folder.name,folder.path",
 									"protocol": "https",
 									"host": [
 										"{{pardot_domain}}"
